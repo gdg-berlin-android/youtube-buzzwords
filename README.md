@@ -15,11 +15,32 @@ pip3 install -r requirements.txt
 ## Usage
 
 ``` sh
-python3 . -c 10 -r 3 -v eIUqw3_YcCI
+python3 . -c 3 -r 10 -v eIUqw3_YcCI
 ```
 
-will output a list of words spoken that have more then 10 characters and are repeated at least 3 times.
+results in
 
+```
+~~YouTube Word Counter~~
+
+listing all words with more then 3 characters occuring more then 10 times.
+
+{
+  "eIUqw3_YcCI": {
+    "over": 11,
+    "today": 11,
+    "will": 12,
+    "have": 12,
+    "google": 12,
+    "applause": 12,
+    "more": 15,
+    "that": 15,
+    "with": 18,
+    "this": 24,
+    "gemini": 26
+  }
+}
+```
 ## Reasoning
 
 Create a wordlist for buzz word bingo
