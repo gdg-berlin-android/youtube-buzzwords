@@ -21,31 +21,3 @@ def transcribe_and_count(video_id='eIUqw3_YcCI', min_char_count=3, min_repeat_co
     mapped = dict((x[1],x[0]) for x in filtered)
     return mapped
 
-if __name__ == '__main__':
-    import sys
-    import json
-    from argparse import ArgumentParser
-
-    parser = ArgumentParser(
-        prog="YouTube Word Counter",
-        description="Count words in a YouTube video using it's transcription.",
-        epilog="~ Thanks to the GDG Berlin Android ~"
-    )
-
-    parser.add_argument('-c','--char-count')
-    parser.add_argument('-r','--repeat-count')
-    parser.add_argument('-v','--videos', nargs='*')
-    args = parser.parse_args(sys.argv[1:])
-    print(args)
-    sys.exit(-1)
-
-    vids = sys.argv[1:]
-    if len(vids) == 0:
-        vids = ['eIUqw3_YcCI']
-
-    print(
-        json.dumps(
-            dict([(x,transcribe_and_count(x)) for x in vids]),
-            indent=2
-        )
-    )
