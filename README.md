@@ -1,7 +1,7 @@
 # Summarize YouTube Words Spoken
 
 > [!WARNING]
-> YouTube will block your IP if to rapidly used
+> YouTube will block your IP if used too often.
 
 ## Installation
 
@@ -23,7 +23,7 @@ results in
 ```
 ~~YouTube Word Counter~~
 
-listing all words with more then 3 characters occuring more then 10 times.
+Listing all words with more than 3 characters occuring more than 10 times.
 
 {
   "eIUqw3_YcCI": {
@@ -43,8 +43,8 @@ listing all words with more then 3 characters occuring more then 10 times.
 ```
 ## Reasoning
 
-Create a wordlist for buzz word bingo
+Create a wordlist for buzz word bingo.
 
 # Result
 
-MY IP GOT BLOCKED CANNOT REPRODUCE RESULTS FROM BEFORE
+MY IP GOT BLOCKED;I CANNOT REPRODUCE RESULTS; GOOD LUCK

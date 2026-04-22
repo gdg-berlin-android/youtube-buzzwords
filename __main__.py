@@ -16,7 +16,7 @@ if __name__ == '__main__':
     parser.add_argument('-v','--videos', nargs='*', default=['eIUqw3_YcCI'], help='YouTube video ids to parse')
     args = parser.parse_args(sys.argv[1:])
 
-    print(f'~~{name}~~\n\nlisting all words with more then {args.char_count} characters occuring more then {args.repeat_count} times.\n', file=sys.stderr)
+    print(f'~~{name}~~\n\nListing all words with more than {args.char_count} characters occuring more than {args.repeat_count} times.\n', file=sys.stderr)
 
     print(
         json.dumps(
